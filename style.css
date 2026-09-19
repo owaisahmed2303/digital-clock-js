@@ -1,0 +1,85 @@
+
+@import url('https://cdn.jsdelivr.net/npm/dseg@0.46.0/css/dseg.css');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background: linear-gradient(120deg, #080e18 0%, #0f172a 35%, #1e1b4b 70%, #030712 100%);    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.clock{
+    height: 50vh;
+    min-width: 60vw;
+    /* border: 6px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #090F1B;
+    /* border-radius: 50%; */
+    color: white;
+
+}
+
+.time{
+    height: 50vh;
+    min-width: 60%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+#am-pm{
+    color: #778995;
+    font-size: 1rem;
+}
+.days{
+    height: 40vh;
+    min-width: 30%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     color: #778995;
+    
+    
+}
+#days-list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+}
+#toggle-theme{
+    height: 50px;
+    width: 110px;
+    border-radius: 20%;
+    background-color: #778995;
+    font-size: 1rem;
+    color: #2114d0;
+    font-weight: 700;
+}
+
+@media screen and (max-width:768px) {
+    .clock{
+        height: 40vh;
+        padding: 10px;
+    }
+    .time{
+      font-size: 3rem;
+    }
+    #days-list{
+        gap: 8px;
+              font-size: 0.8rem;
+
+    }
+}
